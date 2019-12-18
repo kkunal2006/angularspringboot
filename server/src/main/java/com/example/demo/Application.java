@@ -89,7 +89,7 @@ class SecurityConfig {
             .map(AuthorizationDecision::new);
     }
 
-    /*@Bean
+    @Bean
     public ReactiveUserDetailsService userDetailsService(UserRepository users) {
         return (username) -> users.findByUsername(username)
             .map(u -> User.withUsername(u.getUsername())
@@ -101,5 +101,5 @@ class SecurityConfig {
                 .accountLocked(!u.isActive())
                 .build()
             );
-    }*/
+    }
 }
