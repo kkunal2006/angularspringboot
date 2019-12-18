@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/blog
+      grid-fs-database: images
+    elasticsearch:
+      host: localhost
+      port: 9200
+logging:
+  level:
+    com.example: DEBUG
+    org.springframework.web: DEBUG
